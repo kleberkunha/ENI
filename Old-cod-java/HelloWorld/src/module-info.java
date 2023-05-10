@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author k
+ *
+ */
+module TirerMotAleatoirement {
+	
+}
