@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="CursoEmVideo/src"/>
+	<classpathentry kind="src" path="demo/src/main/java"/>
+	<classpathentry kind="src" path="fight_Game/src"/>
+	<classpathentry kind="src" path="First_codeJava/src"/>
+	<classpathentry kind="src" path="Game/src"/>
+	<classpathentry kind="src" path="HelloWorld/src"/>
+	<classpathentry kind="src" path="javaExos/src"/>
+	<classpathentry kind="src" path="LearningSwing/src"/>
+	<classpathentry kind="src" path="LearninSwingJava/src"/>
+	<classpathentry kind="src" path="LetterGame/src"/>
+	<classpathentry kind="src" path="LettersGame/src/lettersGame"/>
+	<classpathentry kind="src" path="project-learning/src/main/java"/>
+	<classpathentry kind="src" path="project-learning/src/test/java"/>
+	<classpathentry kind="src" path="snakeGame/src"/>
+	<classpathentry kind="src" path="spring-boot-example/src/main/java"/>
+	<classpathentry excluding="systemPackage/" kind="src" path="TimeSystem/src"/>
+	<classpathentry kind="src" path="TimeSystem/src/systemPackage"/>
+	<classpathentry kind="lib" path="demo1/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="project-learning/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="spring-boot-example/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="CursoEmVideo/bin"/>
+</classpath>
