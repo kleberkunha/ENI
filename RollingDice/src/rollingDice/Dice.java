@@ -8,6 +8,12 @@ public class Dice {
 	
 	private static Random rand = new Random(); // Call the random function
 	
+	
+	public Dice(int nbFaces) {
+		this.setNbFaces(nbFaces);
+		this.play();
+	}
+	
 	public int getNbFaces() {
 		//Used to get the data from the variable
 		return this.nbFaces;

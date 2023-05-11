@@ -4,9 +4,7 @@ public class Play {
 
 	public static void main(String[] args) {
 		// Here i create the dice
-		Dice myDice = new Dice();
-		//here i say how many sides the dice have
-		myDice.setNbFaces(6);
+		Dice myDice = new Dice(6);
 		//here he will print the value sorted from the dice
 		do {
 			System.out.println("The number sorted is"+myDice.play());
