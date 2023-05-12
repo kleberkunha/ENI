@@ -38,6 +38,7 @@ public class Address {
 	public void setCity(String city) {
 		this.city = city;
 	}
+	
 
 
 	public Address(String buildingName, int buildingN, String streetName, int postalCode, String city) {
