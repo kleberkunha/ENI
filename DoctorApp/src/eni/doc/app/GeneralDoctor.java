@@ -4,15 +4,22 @@ public class GeneralDoctor {
 	
 	private String first_name;
 	private String last_name;
-	private int phoneN;
-	private static int consuPrice = 25;
+	private String phoneN;
+	private int consuPrice ;
+	private Address address;
 	
-	public GeneralDoctor(String first_name, String last_name, int phoneN) {
+	public GeneralDoctor(String first_name, String last_name, String phoneN,int consuPrice, Address address) {
 		this.first_name = first_name.toUpperCase();
 		this.last_name = last_name;
 		this.phoneN = phoneN;
+		this.consuPrice = consuPrice;
+		this.address = address;
 	}
 	
+	public GeneralDoctor(Address address) {
+		this.address = address;
+	}
+
 	// GET AND SETTER
 	public String getFirst_name() {
 		return first_name;
@@ -26,22 +33,24 @@ public class GeneralDoctor {
 	public void setLast_name(String last_name) {
 		this.last_name = last_name;
 	}
-	public int getPhoneN() {
+	public String getPhoneN() {
 		return phoneN;
 	}
-	public void setPhoneN(int phoneN) {
+	public void setPhoneN(String phoneN) {
 		this.phoneN = phoneN;
 	}
-	public static int getConsuPrice() {
+	
+	public int getConsuPrice() {
 		return consuPrice;
 	}
-	public static void setConsuPrice(int consuPrice) {
-		GeneralDoctor.consuPrice = consuPrice;
+
+	public void setConsuPrice(int consuPrice) {
+		this.consuPrice = consuPrice;
 	}
-	
+
 	public void show() {
 		System.out.println("___________________ DOC's ____________________");
-		System.out.printf("%s %s%nPhone N:  %s%nPrice : %d%n", this.first_name, this.last_name,this.phoneN, GeneralDoctor.consuPrice);
+		System.out.printf("FirstName : %s - LastName %s%nPhone N:  %s%nPrice : %s%nAddress : %s", this.first_name, this.last_name,this.phoneN,this.consuPrice, this.address.show());
 	}
 	
 }

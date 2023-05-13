@@ -6,7 +6,7 @@ import java.time.LocalDate;
 public class Patient {
 	private String first_name;
 	private String last_name;
-	private String phoneN;
+	private int phoneN;
 	private char gender;
 	private String socialN;
 	private LocalDate birthDate;
@@ -38,13 +38,8 @@ public class Patient {
 
 
 
-	public String getFirst_name() {
-		return first_name;
-	}
-
-
-	public Patient(String first_name, String last_name, String phoneN, char gender, String socialN, LocalDate birthDate,
-		String comments, Address address) {
+	public Patient(String first_name, String last_name, int phoneN, char gender, String socialN, LocalDate birthDate,
+			String comments, Address address) {
 		this.first_name = first_name;
 		this.last_name = last_name;
 		this.phoneN = phoneN;
@@ -53,8 +48,18 @@ public class Patient {
 		this.birthDate = birthDate;
 		this.comments = comments;
 		this.address = address;
-}
+	}
 
+
+
+
+	public Patient(Address address) {
+		this.address = address;
+	}
+
+	public String getFirst_name() {
+		return first_name;
+	}
 
 	public void setFirst_name(String first_name) {
 		this.first_name = first_name;
@@ -68,11 +73,11 @@ public class Patient {
 		this.last_name = last_name;
 	}
 
-	public String getPhoneN() {
+	public int getPhoneN() {
 		return phoneN;
 	}
 
-	public void setPhoneN(String phoneN) {
+	public void setPhoneN(int phoneN) {
 		this.phoneN = phoneN;
 	}
 
@@ -108,16 +113,11 @@ public class Patient {
 		this.comments = comments;
 	}
 
-	public Address getAddress() {
-		return address;
-	}
-
 	public void show() {
 		System.out.println("___________________ Patient ____________________");
 		System.out.printf(
-				"Full name : %s %s%nPhone N: %s%nGender : %s%nSocialN :  %s%nBirth Date: %s%nComments : %s%nAddress: %n",
+				"Full name : %s %s%nPhone N: %d%nGender : %s%nSocialN :  %s%nBirth Date: %s%nComments : %s%nAddress: %n",
 				this.first_name, this.last_name, this.phoneN, this.gender == 'F' ? "Female" : "Male", this.socialN,
-				this.birthDate, this.comments != null ? this.comments : "[No comments]");
-		this.address.show();
+				this.birthDate, this.comments != null ? this.comments : "[No comments]",this.address);
 	}
 }
