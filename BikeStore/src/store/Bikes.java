@@ -12,7 +12,7 @@ public class Bikes {
 	}
 	
 	
-	public void ShowBikes() {
+	public void showBikes() {
 		System.out.printf("Bike name : %s%nSize : %d%nYear : %d", this.name, this.size, this.year);
 	}
 	
