@@ -6,7 +6,11 @@ import java.time.Month;
 public class Location {
 
 	public static void main(String[] args) {
-
+		
+		//This is how i create an Array,
+		// and in this array i create every content
+		
+		//Cycle in coming from the other file "Class Cycle"
 		Cycle[] aLouer = {
 				new Velo(LocalDate.of(2017, Month.JUNE, 2), "Lapierre", "speed 400", 27),
 				new Velo(LocalDate.of(2018, Month.APRIL, 9), "Btwin", "riverside 900", 10),
@@ -15,9 +19,12 @@ public class Location {
 				new Gyroroue(LocalDate.of(2018, Month.MARCH, 25), "Immotion", "v8", 40),
 				new Gyroroue(LocalDate.of(2018, Month.MARCH, 25), "Segway", "Ninebot One E+", 30)
 		};
+		
 		System.out.println("Voici les cycles que nous proposons a la location :");
 		for(Cycle c : aLouer) {
 			System.out.printf(" - %-65s %5.2f$/heure%n", c.toString(), c.getTarifLocationHeure());
+			//Here i get the to String that i created in the Cycle class,
+			//the toString will show all the text, and the getTarifLocationHeure will show the values NUMBERSint
 		}
 	}
 
